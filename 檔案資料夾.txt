@@ -1,0 +1,28 @@
+/AOI-project2                  # 只是我專案名
+│
+├── /data                      
+│   └──/images                 # 想要訓練的照片(最基本都要50到100張以上)
+│   └──/labels                 # 放置txt檔
+│   └──/train                  #訓練模型的數據
+│      └──/images
+│      └──/labels
+│   └──/valid                  #驗證模型的數據
+│      └──/images
+│      └──/labels
+│   └──/xml                    # labelimg標記好後的xml存放點
+│      └──/labels
+├── /images                    # 測試訓練後的程式動作照片存放區
+│
+├── /out_images                # 程式動作判斷結果照片存放區
+├── /video                     # 測試訓練後的程式動作影片存放區
+├── /out_video                 # 程式動作判斷結果影片存放區
+│
+├── app.py                     # 測試程式動作照片
+├── video.py                   # 測試程式動作影片
+├── train.py                   # 開始訓練模組檔
+├── split.py                   # 將 90% 的圖片列入 train的txt, 10% 為 valid的圖片跟txt
+├── xml2txt.py                 # 將xml 轉成 txt 格式
+├── data.yml                   # 定義數據集配置的關鍵文件
+├── yolo11n.pt                 # YoloV11 n模型 (依據個人下載想要的,本人用s模型)
+└── yolo11s.pt                 # YoloV11 s模型 (依據個人下載想要的,本人用s模型)
+

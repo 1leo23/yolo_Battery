@@ -1,0 +1,5 @@
+train: C:\Users\user1\Desktop\yolo\Battery\data\train\images
+val: C:\Users\user1\Desktop\yolo\Battery\data\valid\images
+
+nc: 2
+names: ['round','box']
