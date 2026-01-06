@@ -25,7 +25,7 @@ if __name__ == '__main__':
         device=0,            # ★ 明確指定 GPU
         workers=4,           # ★ 非常重要（Windows 不要太高）
         amp=True             # ★ 混合精度，GPU 會快很多
-)
+)git add
 
     t2 = time.time()
     print(f'訓練花費時間 : {t2 - t1}秒')
